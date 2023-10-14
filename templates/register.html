@@ -1,0 +1,27 @@
+{% extends "login.html" %}
+
+{% block title %}Register{% endblock title %}
+
+{% block form-title %}
+  <h1 class="border-bottom border-primary border-5 pb-1 d-inline-block">Register</h1>
+{% endblock form-title %}
+
+{% block email %}
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="text" class="form-control" id="email" name="email" required>
+  </div>
+{% endblock email %}
+
+{% block authentication-links %}
+  <p class="mt-2">
+    Already have an account?
+    <a href="{% url 'login' %}" class="text-decoration-none text-primary">
+      Login
+    </a>
+  </p>
+{% endblock authentication-links %}
+
+{% block auth-form-btn %}
+  <button type="submit" class="btn btn-primary btn-lg">Register</button>
+{% endblock auth-form-btn %}
