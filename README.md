@@ -32,7 +32,7 @@ On Windows
 ```bash
 python manage.py runserver
 ```
-## Screenshots
+## DEMO
 
 ![App Screenshot](web.png)
 
